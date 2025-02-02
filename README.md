@@ -42,13 +42,17 @@ Este prompt aseguir foi aplicado em 5 (cinco) IA generativas mais populares no m
 
 ```text
 
-Escreva um programa Python que mostre uma bola quicando dentro de um hexágono giratório. 
-A bola deve ser afetada pela gravidade e pelo atrito, e deve quicar nas paredes giratórias de forma realista.
+Escreva um programa Python que mostre uma 
+bola quicando dentro de um hexágono giratório. 
+A bola deve ser afetada pela gravidade e pelo 
+atrito, e deve quicar nas paredes giratórias 
+de forma realista.
 
 ```
 
-## As IA generativas
+## IAs generativas
 
+Você pode ver a resposta de cada IA aqui:
 
 * [ChatGPT](./chatgpt.md)
 * [Gemini](./gemini.md)
@@ -57,25 +61,56 @@ A bola deve ser afetada pela gravidade e pelo atrito, e deve quicar nas paredes 
 * [Claude](./claude.md)
 
 
+## Dependências
+
+Este projeto utiliza as seguintes bibliotecas Python para a criação da simulação:
+
+*   **Pygame:**  Uma biblioteca amplamente utilizada para o desenvolvimento de jogos e aplicações multimídia em Python. No contexto deste projeto, o Pygame é empregado para:
+    *   **Criação da janela de exibição:**  Gerenciar a janela onde a animação será renderizada.
+    *   **Renderização gráfica:** Desenhar os elementos visuais da simulação, como a bola e o hexágono.
+    *   **Controle de eventos:**  Lidar com eventos do teclado e mouse, caso a simulação possua interatividade.
+    *   **Manipulação de tempo:** Controlar a taxa de atualização da animação (FPS).
+
+    Você pode encontrar mais informações sobre o Pygame em: [https://www.pygame.org/](https://www.pygame.org/)
+
+*   **NumPy:** Uma biblioteca fundamental para computação científica em Python. O NumPy é utilizado neste projeto para:
+    *   **Operações matemáticas:** Realizar cálculos vetoriais e matriciais, essenciais para a movimentação da bola e rotação do hexágono.
+    *   **Eficiência numérica:**  O NumPy oferece estruturas de dados e funções otimizadas que tornam as operações matemáticas mais rápidas e eficientes, o que é crucial para uma animação fluida.
+
+    Para saber mais sobre o NumPy, visite: [https://numpy.org/](https://numpy.org/)
+
+### Observação sobre a Instalação
+
+Conforme detalhado na seção [Instalação](#instalação), este projeto utiliza o `pipenv` para o gerenciamento de dependências. Ao executar o comando `pipenv install` (ou `pipenv install --dev` se desejar as dependências de desenvolvimento), o `pipenv` irá **automaticamente instalar o Pygame, NumPy e quaisquer outras dependências listadas no arquivo `Pipfile`** dentro do ambiente virtual do projeto. Portanto, você **não precisa** instalar essas bibliotecas manualmente.
+
+Caso não esteja utilizando o `pipenv`, será necessário instalar as dependências manualmente usando o `pip`, por exemplo:
+
+```bash
+pip install pygame numpy
+```
+No entanto, **recomenda-se fortemente o uso do `pipenv`** para garantir a consistência do ambiente e evitar conflitos de dependências com outros projetos Python em seu sistema.
+
+-----
+
 ## Instalação
 
 Este projeto utiliza o `pipenv` para gerenciar as dependências. 
 
 Siga os passos abaixo para instalar e configurar o ambiente de desenvolvimento:
 
-**Pré-requisitos:**
+### Pré-requisitos
 
 *   Python 3.x (recomendado Python 3.11 ou superior)
 *   `pip`
 *   `pipenv`
 
-**Passos para Instalação:**
+### Passos para Instalação
 
 1.  **Clone o repositório:**
 
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO>
-    cd <NOME_DA_PASTA_DO_PROJETO>
+    git clone git@github.com:natanfiuza/ball_in_hexagon.git
+    cd ball_in_hexagon
     ```
 
 2.  **Instale as dependências usando o `pipenv`:**
@@ -162,11 +197,12 @@ Este projeto contém 5 scripts Python, cada um gerando um programa que simula um
 
 **Aproveite a visualização das diferentes implementações da simulação criadas pelas IAs!**
 
+
 ## Considerações Finais e Agradecimentos
 
 Este projeto foi desenvolvido como um experimento para explorar as capacidades de diferentes IAs na criação de código Python para uma simulação visual. Através dos 5 scripts gerados - `chatgpt.py`, `gemini.py`, `deepseek.py`, `qwenchat.py` e `claude.py` - podemos observar as diferentes abordagens e estilos de codificação empregados por cada uma delas, resultando em variações sutis na animação da bola quicando dentro de um hexágono giratório.
 
-**Sugestões e Uso Didático:**
+### Sugestões e Uso Didático
 
 Este projeto é especialmente recomendado para **uso didático** por estudantes que estão aprendendo a linguagem Python. Ele oferece uma oportunidade única de:
 
@@ -175,11 +211,11 @@ Este projeto é especialmente recomendado para **uso didático** por estudantes 
 *   **Aprender na Prática Conceitos de Animação e Geometria:** Os alunos podem estudar como a animação da bola e a rotação do hexágono são implementadas no código, reforçando conceitos de geometria e movimento em um contexto visualmente atrativo.
 *   **Modificar e Expandir o Código:** Os scripts servem como um ponto de partida para experimentação. Os alunos são encorajados a modificar o código, alterar parâmetros, adicionar novos elementos e explorar diferentes comportamentos da simulação.
 
-**Agradecimentos:**
+### Agradecimentos
 
 Agradeço às equipes por trás das IAs que contribuíram para este projeto: ChatGPT (OpenAI), Gemini (Google), DeepSeek, Qwen Chat (Alibaba) e Claude (Anthropic). A capacidade dessas IAs de gerar código funcional é impressionante e abre um leque de possibilidades para o futuro do desenvolvimento de software.
 
-**Contribuições e Contato:**
+### Contribuições e Contato
 
 Contribuições para este projeto são bem-vindas! Se você tiver sugestões de melhorias, correções de bugs ou ideias para expandir a simulação, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request* neste repositório.
 
