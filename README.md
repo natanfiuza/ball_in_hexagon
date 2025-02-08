@@ -11,6 +11,10 @@ A simulação, criada com o Pygame, representa realisticamente os efeitos da gra
 
 ![](./assets/img/gemini.png)
 
+### DeepSeek
+
+![](./assets/img/DeepSeek-Bola-Quicando-em-Hexágono-Giratório.gif)
+
 ### Destaques educacionais
 
 *   **Aprendizagem prática:** os usuários podem experimentar diretamente com variáveis como gravidade, atrito e restituição para obter uma compreensão intuitiva de seus efeitos.

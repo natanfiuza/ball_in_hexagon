@@ -4,11 +4,11 @@ import math
 # --- Constantes da simulação ---
 WIDTH, HEIGHT = 800, 600            # Tamanho da janela
 FPS = 60                            # Frames por segundo
-GRAVITY = 0.5                       # Aceleração da gravidade
+GRAVITY = 0.3                       # Aceleração da gravidade
 ATRITO_AR = 0.999                   # Atrito do ar (reduz gradualmente a velocidade)
 RESTITUICAO = 0.9                   # Coeficiente de restituição (perda de energia na colisão)
 HEXAGON_RADIUS = 250                # Raio do hexágono (distância do centro aos vértices)
-BALL_RADIUS = 10                    # Raio da bola
+BALL_RADIUS = 12                    # Raio da bola
 
 # Define as cores
 BLACK = (0, 0, 0)
@@ -99,11 +99,11 @@ def main():
         screen.fill((0, 0, 0))
 
         # Atualiza a rotação do hexágono
-        hex_rotation += 0.01
+        hex_rotation += 0.02
         hex_vertices = get_hexagon_vertices(center, HEXAGON_RADIUS, hex_rotation)
 
         # Desenha o hexágono (apenas as bordas, com 3 pixels de espessura)
-        pygame.draw.polygon(screen, (0, 255, 0), hex_vertices, 3)
+        pygame.draw.polygon(screen, (0, 255, 0), hex_vertices, 4)
 
         # Atualiza a bola
         ball.update()
