@@ -9,11 +9,21 @@ Este projeto oferece uma exploração interativa e visualmente envolvente dos co
 
 A simulação, criada com o Pygame, representa realisticamente os efeitos da gravidade, do atrito e da restituição (elasticidade das colisões) no movimento da bola. Os usuários podem modificar esses parâmetros e ver em tempo real como eles influenciam a trajetória, a velocidade e o comportamento de quique da bola. Além disso, a rotação do próprio hexágono introduz um elemento adicional de complexidade, demonstrando como as forças e os quadros de referência interagem.
 
-![](./assets/img/gemini.png)
+### Claude
+
+![](./assets/img/Claude-Bola-Quicando-no-Hexágono.gif)
+
+### ChatGPT
+
+![](./assets/img/ChatGPT-Bola-Quicando-em-Hexágono-Giratório.gif)
 
 ### DeepSeek
 
 ![](./assets/img/DeepSeek-Bola-Quicando-em-Hexágono-Giratório.gif)
+
+### Gemini
+
+![](./assets/img/Gemini-Bola-quicando-em-um-hexágono-giratório.gif)
 
 ### Destaques educacionais
 
